@@ -1,0 +1,298 @@
+
+.teacher-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 15px;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 100%;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.teacher-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.teacher-img {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    border-bottom: 4px solid #1a56db;
+}
+
+/* CARD CONTENT */
+.teacher-card .card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.text-muted {
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-unstyled li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-unstyled li:last-child {
+    border-bottom: none;
+}
+
+.list-unstyled li i {
+    min-width: 24px;
+    margin-right: 8px;
+}
+
+/* BUTTONS */
+.btn-outline-primary {
+    border: 2px solid #1a56db;
+    background-color: transparent;
+    color: #1a56db;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.btn-outline-primary:hover {
+    background: #1a56db;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: linear-gradient(rgba(26, 86, 219, 0.85), rgba(16, 66, 179, 0.9)),
+                url('../image/anasayfa1.JPG');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+/* SECTION TITLE */
+.section-title {
+    font-weight: 700;
+    color: #1a56db;
+    position: relative;
+    padding-bottom: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #fac003;
+    border-radius: 2px;
+}
+
+/* KADRO FEATURES */
+.qualities-section {
+    margin-bottom: 60px;
+}
+
+.qualities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.quality-item {
+    background: linear-gradient(to right bottom, #f8f9fa, #e9ecef);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #1e3c72;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #ffd700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quality-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    border-left: 5px solid #1e3c72;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    line-height: 1.8;
+}
+
+.kadro-text {
+    max-width: 800px;
+    color: #333;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.kadro-box {
+    padding: 25px 10px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.kadro-box .icon {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.orange-box {
+    background: #ffb319;
+}
+
+.green-box {
+    background: #34c759;
+}
+
+.blue-box {
+    background: #0fb9b1;
+}
+
+.sky-box {
+    background: #45aaf2;
+}
+
+.red-box {
+    background: #fc5c65;
+}
+
+.kadro-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.teacher-card,
+.quality-item,
+.kadro-box {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .teacher-img {
+        height: auto;
+        max-height: 220px;
+    }
+
+    .hero-section {
+        padding: 70px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .qualities {
+        gap: 10px;
+    }
+
+    .quality-item {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .teacher-card {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.25rem;
+    }
+
+    .kadro-box .icon {
+        font-size: 28px;
+    }
+
+    .description {
+        padding: 20px;
+    }
+}
